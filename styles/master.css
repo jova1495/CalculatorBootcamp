@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  --backgroundColor1:  rgb(62,60,66);;
+  --backgroundColor2:  linear-gradient(56deg, rgba(62,60,66,1) 0%, 
+  rgba(81,58,122,1) 49%, rgba(43,47,125,1) 100%);
+  --btnBackground: rgb(230, 230, 230);
+  --btnBackgroundHover: rgb(230, 230, 230, .9);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--backgroundColor1);
+  background: var(--backgroundColor2);
+  display: flex;
+  justify-content: center;
+}
+
+.calculator-main {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+}
+
+.calculator-main .main__btn {
+  font-size: 2rem;
+  border: 1px solid gray;
+  outline: none;
+  background-color: var(--btnBackground);
+}
+
+.calculator-main .main__btn:hover {
+  background-color: var(--btnBackgroundHover);
+  cursor: pointer;
+}
+
+.calculator-main .main__num {
+  font-size: 2rem;
+  border: 1px solid gray;
+  outline: none;
+  background-color: var(--btnBackground);;
+}
+
+.calculator-main .main__num:hover {
+  background-color: var(--btnBackgroundHover);
+  cursor: pointer;
+}
+
+.calculator-main .main__op {
+  font-size: 2rem;
+  border: 1px solid gray;
+  outline: none;
+  background-color: orange;
+}
+
+.calculator-main .main__op:hover {
+  background-color: rgba(255, 165, 0, .7);
+  cursor: pointer;
+}
+
+.calculator-main .main__num0 {
+  font-size: 2rem;
+  border: 1px solid gray;
+  outline: none;
+  background-color: var(--btnBackground);
+  grid-column: span 2;
+}
+
+.calculator-main .main__num0:hover {
+  background-color: var(--btnBackgroundHover);
+  cursor: pointer;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.main-header .header__previous {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.main-header .header__current {
+  color: white;
+  font-size: 2.5rem;
+}
