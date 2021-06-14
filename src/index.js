@@ -93,7 +93,7 @@ function calculate(){
     case "-":
       result = before - actual;
       break;
-    case "*":
+    case "x":
       result = before * actual;
       break;
     case "÷":
