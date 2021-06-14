@@ -3,10 +3,10 @@
 
 
 # Starting 🚀
-*Just open index.html version and you will see the project.*
+*Just open index.html version and you will see the project!*
 
 # Preview 👀
-![image](https://user-images.githubusercontent.com/57199460/121831997-914b8500-cc8e-11eb-9229-b328d5b1f186.png)
+![image](https://user-images.githubusercontent.com/57199460/121837138-88f94700-cc9a-11eb-90d8-9932d9c8245e.png)
 
 
 # Pre-requirement 📋
